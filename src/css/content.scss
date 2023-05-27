@@ -1,0 +1,226 @@
+.navigation {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 18.5%;
+
+    .navigation_left {
+        @media (max-width: 768px) {
+            margin-left: 3rem;
+        }
+
+        @media (max-width: 390px) {
+            margin-left: -3rem;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+
+                &:hover {
+                    transition: 1s;
+                    filter: grayscale(0.8);
+                }
+            }
+
+            h2 {
+                padding-top: 1rem;
+                margin-left: 1rem;
+                color: var(--second);
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.8rem;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    .navigation_right {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-top: 1.4rem;
+
+        a {
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.navigation_mobile {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    margin-left: 28%;
+    display: none;
+
+    a {
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        display: initial;
+    }
+
+    @media (max-width: 390px) {
+        margin-left: 10%;
+    }
+}
+
+.content {
+    margin: 6rem 20%;
+    font-family: "Nunito Sans", sans-serif;
+
+    @media (max-width: 1366px) {
+        margin: 0rem 20%;
+    }
+
+    h2 {
+        font-size: 4rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.content-about {
+    margin: 2rem 23%;
+
+    @media (max-width: 768px) {
+        margin: 2rem 10%;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote {
+        font-size: 1.7rem;
+        font-style: italic;
+        border-left: 5px solid var(--dark-primary);
+
+        p {
+            margin-left: 1rem;
+
+            u {
+                color: var(--primary);
+                text-decoration: none;
+                font-weight: 600;
+            }
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .languages {
+        p {
+            margin-bottom: 0;
+            font-size: 1.2rem;
+
+            &:last-child {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .positions {
+        h4 {
+            margin-top: 2rem;
+            margin-bottom: 0rem;
+            color: var(--primary);
+            font-size: 1.3rem;
+            font-family: "Nunito Sans", sans-serif;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            line-height: 1.75rem;
+            color: var(--primary);
+        }
+    }
+
+    .certificates {
+        strong {
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer {
+    margin: 0 23rem 0 25rem;
+    display: flex;
+    background: transparent;
+    color: var(--third);
+
+    @media (max-width: 1366px) {
+        margin: 0 17rem 0 17rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0 5rem 0 5rem;
+    }
+
+    strong {
+        color: var(--second);
+    }
+
+    a {
+        color: var(--second-light);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+
+    .footer_left,
+    .footer_center,
+    .footer_right {
+        display: flex;
+        flex-direction: column;
+        margin-right: 12rem;
+
+        @media (max-width: 1366px) {
+            margin-right: 5rem;
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 5rem;
+        }
+
+        @media (max-width: 390px) {
+            margin-left: -3rem;
+        }
+    }
+}
